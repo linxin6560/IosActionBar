@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * 他趣标题栏
+ * 标题栏
  * Created by LinXin on 2016/6/7 14:01.
  */
 @SuppressWarnings({"JavaDoc", "unused"})

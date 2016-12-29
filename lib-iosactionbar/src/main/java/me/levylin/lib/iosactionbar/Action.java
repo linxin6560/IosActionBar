@@ -3,10 +3,7 @@ package me.levylin.lib.iosactionbar;
 import android.view.View;
 
 /**
- * 他趣Action
- *
- * @author: LinX
- * @Date: 2015/7/29 9:58.
+ * Action
  */
 public abstract class Action {
 

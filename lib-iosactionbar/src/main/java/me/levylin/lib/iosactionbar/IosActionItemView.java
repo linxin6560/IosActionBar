@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 /**
  * Action子项视图
- *
- * @author: LinX
- * @Date: 2015/7/29 9:47.
  */
 public class IosActionItemView extends RelativeLayout implements View.OnClickListener {
 
