@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -22,7 +21,6 @@ public class IosActionItemView extends RelativeLayout implements View.OnClickLis
     private TextView mTitleView;
     //动作
     private Action mAction;
-    private int drawPadding;
     private static final int MAX_ICON_SIZE = 32; // dp
     private int mMaxIconSize;
 
@@ -52,7 +50,6 @@ public class IosActionItemView extends RelativeLayout implements View.OnClickLis
     protected void onFinishInflate() {
         super.onFinishInflate();
         mTitleView = (TextView) findViewById(R.id.layout_actionbar_item_tv);
-        drawPadding = mTitleView.getCompoundDrawablePadding();
     }
 
 
@@ -70,11 +67,6 @@ public class IosActionItemView extends RelativeLayout implements View.OnClickLis
         }
         if (action.getDrawable() != 0) {
             setIcon(ContextCompat.getDrawable(getContext(), action.getDrawable()));
-        }
-        if (TextUtils.isEmpty(mTitleView.getText())) {
-            mTitleView.setCompoundDrawablePadding(0);
-        } else {
-            mTitleView.setCompoundDrawablePadding(drawPadding);
         }
         if (action.getTextColor() != -1) {
             mTitleView.setTextColor(action.getTextColor());
